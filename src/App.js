@@ -7,12 +7,12 @@ import SignUp from './pages/Signup';
 import Product from './pages/products';
 import Formal from './pages/formal';
 import Casual from './pages/casual';
-import ProductPage from './pages/product_page'
+import ProductPage from './pages/product_page';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter >
       <Navbar />
       <Routes>
         <Route path="/" element={<Shop />} />

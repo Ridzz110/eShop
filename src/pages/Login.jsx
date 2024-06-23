@@ -18,7 +18,7 @@ const Login = () => {
 
     return(
         <div class=" flex flex-col items-center w-full h-screen">
-        <div class=" items-center block w-10/12 mt-10">
+        <div class=" items-center block lg:w-96 w-80 mt-10">
             <Card className="font-libre pt-4">
             <CardHeader>
                 <CardTitle class="text-3xl font-bold">Login</CardTitle>

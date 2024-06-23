@@ -33,10 +33,11 @@ const CartItem = () => {
                 }
                 return null;
             })}
-        </div>
-         <div  className='w-full flex-col justify-end p-5 font-libre bg-black text-white text-xl'>
-         <h3 className='mt-2'>Total Quantity: {getTotalQuantity()}</h3>
-         <h3 className='mt-2'>Total Price: ${getTotalPrice().toFixed(2)}</h3>
+        
+         <div  className='relative bottom-0 w-full flex-col justify-end p-5 font-libre bg-black text-white text-xl'>
+         <p className='mt-2'>Total Quantity: {getTotalQuantity()}</p>
+         <p className='mt-2'>Total Price: ${getTotalPrice().toFixed(2)}</p>
+     </div>
      </div>
      </>
     )
