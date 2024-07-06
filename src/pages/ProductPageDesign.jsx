@@ -39,7 +39,7 @@ const ProductPageDesign = (props) => {
     };
     return(
         <>
-        <div className='grid lg:grid-cols-2 w-full gap-4 mt-7 grid-cols-1 sm:m-3'>
+        <div className='grid lg:grid-cols-2 w-full gap-4 mt-7 grid-cols-1 sm:m-3 pl-4'>
             <div className='flex flex-col items-center'>
             <img src={product.image} alt={product.name} className=' w-3/4 h-4/6 rounded-lg'/>
             <div className='flex justify-center items-center'>
@@ -52,12 +52,14 @@ const ProductPageDesign = (props) => {
             </div>
             </div>
             <div>
-                <p className='font-libre font-extrabold text-5xl mt-3'>{product.name}</p>
+                <p className='font-libre font-extrabold lg:text-5xl md:text-4xl text-3xl mt-3'>{product.name}</p>
                 <div className='w-11/12'>
-                <p className='font-libre text-2xl mt-4'>{product.description}</p>
+                <p className='font-libre lg:text-2xl text-xl mt-4'>{product.description}</p>
                 </div>
-                <div className=' w-28 mt-3 p-2 bg-black flex justify-center items-center rounded-full'>
-                <p className='font-libre text-bold text-2xl text-white'>{product.price}</p>
+                <div className=' h-12 w-28 mt-3 bg-black flex justify-center items-center rounded-full'>
+                    <div className=' h-8'>
+                        <p className='font-libre text-bold text-2xl text-white'>{product.price}</p>
+                    </div>
                 </div>
                 <div className='font-libre text-lg mt-3 flex flex-row'  >
                     {shoeSize(product.size)}
